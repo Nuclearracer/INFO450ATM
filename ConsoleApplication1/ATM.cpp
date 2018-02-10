@@ -46,9 +46,9 @@ int main()
 	{
 		int withdraw = displayInstructions();
 		denomination(withdraw);
-		cout << "\n\nWould you like to make another transaction? Enter 'Y' or 'y' for yes. ";
+		cout << "\n\nWould you like to make another transaction? Enter 'Y' or 'y' for yes, or enter '0' to exit. ";
 		cin >> reRun;
-	} while ((reRun == 'Y') || (reRun == 'y'));
+	} while (((reRun == 'Y') || (reRun == 'y')) || (reRun != '0'));
     return 0;
 }
 
